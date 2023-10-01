@@ -1,0 +1,20 @@
+server:
+  port: 8050
+  servlet:
+    context-path: /
+
+spring:
+  banner:
+    location: banner.txt
+  datasource:
+    driverClassName:  com.mysql.cj.jdbc.Driver
+    url: ${JPA_DB_URL}
+    username: ${JPA_DB_USERNAME}
+    password: ${JPA_DB_PASSWORD}
+
+logging:
+  level:
+    ua.hillel.springdataapp: INFO
+    org.springframework.web: INFO
+  file:
+    name: springdataapp.log
